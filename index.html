@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Animations and JavaScript Functions</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS3 Animations and JavaScript Functions</h1>
+
+        <div class="section">
+            <h2>Part 1: CSS3 Transitions & Animations</h2>
+            
+            <h3>Button Hover Effect:</h3>
+            <button class="btn">Hover Me</button>
+            
+            <h3>Continuous Animation:</h3>
+            <div class="floating-box">Float</div>
+        </div>
+
+        <div class="section">
+            <h2>Part 2: JavaScript Functions</h2>
+            
+            <h3>Animation with Parameters:</h3>
+            <div class="animation-box" id="animationBox">Click Me!</div>
+            <button class="btn" onclick="triggerAnimation('bounce')">Bounce</button>
+            <button class="btn" onclick="triggerAnimation('spin')">Spin</button>
+            
+            <h3>Scope & Return Values:</h3>
+            <button class="btn" onclick="demonstrateScope()">Test Scope</button>
+            <div id="scopeOutput" class="output" style="display: none;"></div>
+        </div>
+
+        <div class="section">
+            <h2>Part 3: CSS + JavaScript Combined</h2>
+            
+            <h3>Card Flip:</h3>
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">Front</div>
+                    <div class="flip-card-back">Back</div>
+                </div>
+            </div>
+            <button class="btn" onclick="toggleCardFlip()">Flip Card</button>
+            
+            <h3>Modal Popup:</h3>
+            <button class="btn" onclick="showModal()">Show Modal</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>Animated Modal</h3>
+            <p>This modal slides in smoothly!</p>
+            <button class="btn" onclick="hideModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
